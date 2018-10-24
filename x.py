@@ -752,7 +752,7 @@ def lineBot(op):
                             no += 1
                         ret_ += "\n╚══[ Total {} Groups ]".format(str(len(groups)))
                         cl.sendMessage(to, str(ret_))
-                elif msg.text.lower().startswith("nk "):
+                elif msg.text.lower().startswith("Nk "):
                     targets = []
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -760,7 +760,7 @@ def lineBot(op):
                         targets.append(x["M"])
                     for target in targets:
                         try:
-                            cl.sendMessage(to,"Fuck you")
+                            #cl.sendMessage(to,"Fuck you")
                             cl.kickoutFromGroup(msg.to,[target])
                         except:
                             cl.sendMessage(to,"Error")
