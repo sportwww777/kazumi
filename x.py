@@ -760,7 +760,6 @@ def lineBot(op):
                         targets.append(x["M"])
                     for target in targets:
                         try:
-                            #cl.sendMessage(to,"Fuck you")
                             cl.kickoutFromGroup(msg.to,[target])
                         except:
                             cl.sendMessage(to,"Error")
