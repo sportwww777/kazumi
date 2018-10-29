@@ -1061,7 +1061,7 @@ def lineBot(op):
                                 if settings["detectMention"] == True:
                                     contact = cl.getContact(sender)
                                     sendMessageWithMention(to, contact.mid)
-                                    cl.sendMessage(to, "標毛?")
+                                    cl.sendMessage(to, "?")
                                 break
             try:
                 msg = op.message
